@@ -1,1 +1,299 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  padding-bottom: 5rem;
+}
+.container {
+  max-width: 70rem;
+  background: #fff;
+  margin: 0rem auto 0rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem #DAD7D7;
+  border-radius: 0.3rem;
+  padding: 4rem;
+  margin-top: 5rem;
+}
+@media (max-width: 500px) {
+  .container {
+    border: 1rem solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.header {
+  margin-bottom: 3rem;
+}
+.header .full-name {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.header .first-name {
+  font-weight: 700;
+}
+.header .last-name {
+  font-weight: 300;
+}
+.header .contact-info {
+  margin-bottom: 2rem;
+}
+.header .email,
+.header .phone {
+  color: #999;
+  font-weight: 300;
+}
+.header .separator {
+  height: 1rem;
+  display: inline-block;
+  border-left: 0.2rem solid #999;
+  margin: 0rem 1rem;
+}
+.header .position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+.header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header .navbar a {
+  color: #00b3b3;
+  text-decoration: none;
+  border: 0.1rem solid #999;
+  padding: 0.5%;
+  margin: 1% 1% 1% 0;
+}
+.header .navbar a:hover {
+  border-bottom: 0.1rem solid black;
+}
+.details {
+  line-height: 2rem;
+}
+.section {
+  margin-bottom: 4rem;
+}
+.section:last-of-type {
+  margin-bottom: 0rem;
+}
+.section__title {
+  letter-spacing: 0.2rem;
+  color: #00b3b3;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.section__list-item {
+  margin-bottom: 4rem;
+}
+.section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+.left,
+.right {
+  vertical-align: top;
+  display: inline-block;
+}
+.left {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .left {
+    width: 20rem;
+    text-align: left;
+    padding: 1% 0;
+  }
+}
+.right {
+  text-align: right;
+  width: 39%;
+}
+@media (max-width: 500px) {
+  .right {
+    width: 20rem;
+    text-align: left;
+    padding: 1% 0;
+  }
+}
+.name {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.skills__item {
+  margin-bottom: 1rem;
+}
+.skills__item .right input {
+  display: none;
+}
+.skills__item .right label {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: #C3DEF3;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+}
+.skills__item .right input:checked + label {
+  background: #00b3b3;
+}
